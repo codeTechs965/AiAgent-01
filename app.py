@@ -100,7 +100,14 @@ Web results:
 """
 
             response = llm.invoke(prompt)
-            answer = response.content
+            raw_content = response.content
+
+            if isinstance(raw_content, list):
+                 answer = "".join(
+                 item.get("text", "") for item in raw_content if item.get("type") == "text"
+    )
+            else:
+                 answer = raw_content
 
             st.text(answer)
 
