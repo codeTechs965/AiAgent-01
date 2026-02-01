@@ -8,7 +8,7 @@ st.set_page_config(page_title="Web Search Agent")
 
 # ================== KEYS ==================
 SERP_API_KEY = os.getenv("SERP_API_KEY") or "8dde938667a29cfdd63b3c96ec7acdb2f81ecce6ceac6939f284e48269087d48"
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or "AIzaSyC4ZF4I4Ob1R7GUpGvZG2HiNqPowjAabrE"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or "AIzaSyA_mbVuqCveXxHN-Nh-JVcp3jBPxvfBiGk"
 
 # ================== LLM ==================
 llm = ChatGoogleGenerativeAI(
